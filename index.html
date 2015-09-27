@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Piano</title>
+  <script type="text/javascript" src="audiosynth.js"></script>
+  <script type="text/javascript" src="piano.js"></script>
+  <link href="piano.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <h1 align="center">HTML & JS piano</h1>
+  <p align="center">
+    Volume <strong id='volumeValue'></strong> <input id="volumeSlider" type="range" value="100" min="0" max="100" step="1" /> |
+    Use <strong>shift</strong> to play sharp tones |
+    Use <strong>space</strong> to operate the pedal
+  </p>
+  <div class='piano' id='piano' align="center"> </div>
+  <p class="infotext" align="center">Created for US extended Layout on Mac OS</p>
+</body>
+</html>
