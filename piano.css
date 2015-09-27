@@ -1,0 +1,49 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.piano  {
+  width: 90%;
+  margin: 3% 5% 3% 5%;
+}
+
+strong {
+  box-shadow: 0em 0.2em 0em 0em rgba(0,0,0,0.8);
+}
+
+.key {
+  color: black;
+  background-color: white;
+  position: relative;
+  width: 8%;
+  height: 5em;
+
+  margin: 2em 0em 2em 0em;
+  left: 0em;
+  z-index: 0;
+
+  border: none;
+  box-shadow: 0em 0.5em 1em 0em rgba(0,0,0,0.4);
+  border: 0.1em solid rgba(0,0,0,0.3);
+}
+
+.key.sharpFlat {
+  color: white;
+  background-color: black;
+  top: -3.3em;
+  left: -4%;
+  margin-right: -8%;
+  z-index: 3;
+  border: 0.1em solid rgba(255,255,255,0.7)
+}
+
+.key[pressed='true'] {
+  background-color: #66BB6A;
+  box-shadow: 0em 0.3em 0.2em 0em rgba(0,0,0,0.8)
+}
+
+.infotext {
+  color: rgba(0,0,0,0.6);
+  font-size: 10pt;
+  display: block;
+}
