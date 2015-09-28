@@ -11,6 +11,10 @@ strong {
   box-shadow: 0em 0.2em 0em 0em rgba(0,0,0,0.8);
 }
 
+.page-header {
+  background-color: black;
+}
+
 .key {
   color: black;
   background-color: white;
