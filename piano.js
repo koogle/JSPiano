@@ -60,7 +60,6 @@
 
       keyForTone = getKeybuttonForKeystring(pressedKey);
       if(keyForTone !== null) {
-        console.log('key', keyForTone, 'pressed');
         triggerMouseEvent(keyForTone, "mousedown");
       }
     }
@@ -75,10 +74,9 @@
       keyboardStatus.sharp = false;
     } else {
       var pressedKey = String.fromCharCode(charCode).toUpperCase();
-      console.log('pressedKey', pressedKey, String.fromCharCode(charCode));
       keyForTone = getKeybuttonForKeystring(pressedKey);
+
       if(keyForTone !== null && keyForTone.getAttribute('pressed') === 'true') {
-        console.log('key', keyForTone, 'unpressed');
         triggerMouseEvent(keyForTone, "mouseup");
       }
     }
